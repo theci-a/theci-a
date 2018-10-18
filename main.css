@@ -4,7 +4,7 @@ html {
   overflow-y: scroll; 
 }
 
-body { 
+body {  
   font: .875em/1.6 'Inconsolata', monospace;
   color: green;
   font-weight: 400;
