@@ -35,7 +35,7 @@
       $('input[type="text"]').focus();
       $('#home').addClass('open');
       $('#home').textTyper({
-            speed:20,
+            speed:10,
             afterAnimation:function(){
               $('.command').fadeIn();
               $('input[type="text"]').focus();
@@ -78,7 +78,7 @@
 
           // All sections with class .open init textTyper
           $('.open').textTyper({
-            speed:20,
+            speed:16,
             afterAnimation:function(){
               $('.command').fadeIn();
               $('input[type="text"]').focus();
@@ -95,9 +95,9 @@
     // End Command Input-----------------------------
 
             
-       setTimeout(function(){
-        $( "#loc" ).append( "<p>You are in "+geoplugin_city()+"</p>" );
-      }, 7500);
+      setTimeout(function(){
+        $( "#loc" ).append( "<p>Receiving signal from "+geoplugin_city()+", "+geoplugin_countryName()+"</p>" );
+      }, 8500);
 
       
         
@@ -108,59 +108,65 @@
         
 
     // RANDOM
-    var item = ['A', 'B', 'C', 'D'].find((_, i, ar) => Math.random() < 1 / (ar.length - i));
+    var item = ['Courtesy Is Appreciated', 'Closely Investigate Anomaly', 'Crave Intimate Abundance', 'Create Interesting Allocation'].find((_, i, ar) => Math.random() < 1 / (ar.length - i));
     console.log(item);
 
  </script>
 </head>
     
  <body>
- 
-<main>
-    <section id="home">
-        <h2>CIA Command Line Interface Terminal</h2>
-        <p>Writing objects: 100% (16/16), 414.92 KiB | 9.43 MiB/s, done.</p>
-       
-        <p>Your location is being triangulated...</p>
-        <p id="loc"></p>
 
-        <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
-    </section>
+    <main>
+        <section id="home">
+            <h2>CIA Command Line Interface Terminal</h2>
+            <p>Writing objects: 100% (16/16), 414.92 KiB | done.</p>
 
-    <section id="about"> 
-        <h2><span>&raquo;About</span></h2> 
-        <p>CIA is reorganizing your brain, based in Los Angeles. </p>
-    </section> 
+            <h2>Your location is being triangulated... <abbr id="loc"></abbr></h2>
+            
+            <p>
+                <span>Type a <abbr style="color:green">'command'</abbr> + <kbd>Enter</kbd></span>
+                <ul>
+                    <li>'about'</li>
+                    <li>'shows'</li>
+                    <li>'home' </li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="about"> 
+            <h2><span>&raquo;About</span></h2> 
+            <p>CIA is reorganizing your brain </p>
+        </section> 
 
 
-    <section id="usage">
-        <h2><span>&raquo;Shows</span></h2>
-        <p>Hey</p>
-    </section>
+        <section id="shows">
+            <h2><span>&raquo;Shows</span></h2>
+            <p>Hey</p>
+        </section>
 
-    <section id="download">
-        <p> 
-        <a href="https://github.com/syndicatefx/cli">syndicatefx cli</a><br>
-        License: MIT</p>
-    </section>
+        <section id="download">
+            <p> 
+            <a href="https://github.com/syndicatefx/cli">syndicatefx cli</a><br>
+            License: MIT</p>
+        </section>
 
-    <section id="error">
-        <p>Command not found! <p> 
-        <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
-    </section>
+        <section id="error">
+            <p>Command not found! <p> 
+            <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+        </section>
 
-    <section id="help">
-    <h2><span>&raquo;Help?</span></h2>
-    <p><span>Type [command] + <kbd>Enter</kbd></span></p>
-    <ul>
-        <li>'home' -- </li>
-        <li>'about' -- r</li>
-        <li>'help' -- displays this list</li>
-    </ul>
-    </section>
+        <section id="help">
+        <h2><span>&raquo;Help?</span></h2>
+        <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+        <ul>
+            <li>'home' -- </li>
+            <li>'about' -- r</li>
+            <li>'help' -- displays this list</li>
+        </ul>
+        </section>
 
-    <span class="command">syndicatefx:/$<input type="text"></span>
-</main>
+        <span class="command">syndicatefx:/$<input type="text"></span>
+    </main>
 
 
 
