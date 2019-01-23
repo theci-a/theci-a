@@ -94,12 +94,11 @@
 
     // End Command Input-----------------------------
 
-            
+    /*     
       setTimeout(function(){
         $( "#loc" ).append( "<p>Receiving signal from "+geoplugin_city()+", "+geoplugin_countryName()+"</p>" );
       }, 8500);
-
-      
+    */
         
     });
 
@@ -110,6 +109,8 @@
     // RANDOM
     var item = ['Courtesy Is Appreciated', 'Closely Investigate Anomaly', 'Crave Intimate Abundance', 'Create Interesting Allocation'].find((_, i, ar) => Math.random() < 1 / (ar.length - i));
     console.log(item);
+     
+     document.write("Welcome to our visitors from "+geoplugin_city()+", "+geoplugin_countryName()); 
 
  </script>
 </head>
