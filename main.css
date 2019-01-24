@@ -8,9 +8,9 @@ body {
   font: 1.25em/1.6 'Inconsolata', monospace;
   color: green;
   font-weight: 400;
-  max-width: 28em;
+  max-width: 44em;
   padding: 1em;
-  margin: 5% 0; 
+  margin: 0; 
 }
 ::selection{
   background: #000
