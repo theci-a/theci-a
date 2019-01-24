@@ -62,7 +62,7 @@ input[type="text"]{
   border: none;
   font-family: inherit;
   background: #000;
-  font-size: 14px;
+  font: 1em 'Inconsolata', monospace
   padding:0 .5em;
 }
 input[type="text"]:focus{
