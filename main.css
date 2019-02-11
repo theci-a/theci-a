@@ -12,6 +12,25 @@ body {
   padding: 1em;
   margin: 0; 
 }
+.video{
+  position: fixed;
+  right: 20%; 
+  top: 0;
+  width: 20%; 
+  height: 99%;
+  z-index: 0;
+  background:url('https://media.nbclosangeles.com/images/1200*676/BRIGHT-LIGHT-SD-1107+2015.gif') no-repeat;
+  background-position:center;
+  background-size:40%
+}
+#vid2{
+  width:20%;
+  right:0
+}
+iframe{
+  background:transparent;
+  border:0
+}
 ::selection{
   background: #000
 }
@@ -34,6 +53,7 @@ h2{
 }
 p{
   margin-bottom:2em;
+  line-height:15px
 }
 abbr{
   cursor: help;
@@ -66,7 +86,7 @@ input[type="text"]{
   padding:0 .5em;
 }
 input[type="text"]:focus{
-  background: #000;
+  background: transparent;
   color: #efefef;
   outline:none;
 }
