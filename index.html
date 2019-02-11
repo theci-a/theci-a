@@ -18,12 +18,10 @@
      * @demo : https://codepen.io/syndicatefx/pen/jPxXpz
      * @license: MIT
      */
-
     /*!* 
      * jQuery Text Typer plugin
      * https://github.com/gr8pathik/jquery-texttyper
      */
-
 
     (function(e){"use strict";e.fn.textTyper=function(t){var n={typingClass:"typing",beforeAnimation:function(){},afterAnimation:function(){},speed:10,nextLineDelay:400,startsFrom:0,repeatAnimation:false,repeatDelay:4e3,repeatTimes:1,cursorHtml:'<span class="cursor">|</span>'},r=e.extend({},n,t);this.each(function(){var t=e(this),n=1,i="typingCursor";var s=t,o=s.length,u=[];while(o--){u[o]=e.trim(e(s[o]).html());e(s[o]).html("")}t.init=function(e){var n=r.beforeAnimation;if(n)n();t.animate(0)};t.animate=function(o){var a=s[o],f=r.typingClass,l=r.startsFrom;e(a).addClass(f);var c=setInterval(function(){var f=r.cursorHtml;f=e("<div>").append(e(f).addClass(i)).html();e(a).html(u[o].substr(0,l)+f);l++;if(u[o].length<l){clearInterval(c);o++;if(s[o]){setTimeout(function(){e(a).html(u[o-1]);t.animate(o)},r.nextLineDelay)}else{e(a).find("."+i).remove();if(r.repeatAnimation&&(r.repeatTimes==0||n<r.repeatTimes)){setTimeout(function(){t.animate(0);n++},r.repeatDelay)}else{var h=r.afterAnimation;if(h)h()}}}},r.speed)};t.init()});return this}})(jQuery)
 
@@ -35,16 +33,14 @@
       $('input[type="text"]').focus();
       $('#home').addClass('open');
       $('#home').textTyper({
-            speed:6,
+            speed:0,
             afterAnimation:function(){
               $('.command').fadeIn();
               $('input[type="text"]').focus();
               $('input[type="text"]').val('');
             }
           });
-
       
-        
     // get array of section ids, that exist in DOM
     var sectionArray = [];
     // We are using <section> here, you can use <div> or <article> if you want
@@ -78,7 +74,7 @@
 
           // All sections with class .open init textTyper
           $('.open').textTyper({
-            speed:16,
+            speed:0.5,
             afterAnimation:function(){
               $('.command').fadeIn();
               $('input[type="text"]').focus();
@@ -89,7 +85,7 @@
         }// end if ENTER key pressed
 
           
-          
+           
       });// end keyup function
 
     // End Command Input-----------------------------
@@ -116,34 +112,9 @@
 </head>
     
  <body>
-
-    <main>
-        <section id="home">
-         <pre id="taag_output_text" class="fig" contenteditable="true"> ______       ________      ________      
-/_____/\     /_______/\    /_______/\     
-\:::__\/     \__.::._\/    \::: _  \ \    
- \:\ \  __      \::\ \      \::(_)  \ \   
-  \:\ \/_/\     _\::\ \__    \:: __  \ \  
-   \:\_\ \ \   /__\::\__/\    \:.\ \  \ \ 
-    \_____\/   \________\/     \__\/\__\/ 
-                                          </pre>
-         <br>
-            <h2>CIA Command Line Interface Terminal</h2>
-            <p>Writing objects: 100% (16/16), 414.92 KiB | done.</p>
-            
-            <p>
-                <span>Type a <abbr style="color:green">'command'</abbr> + <kbd>Enter</kbd></span>
-                <ul>
-                  <li>'shows'</li>
-                  <li>'home' </li>
-                  <li>'about'</li>
-                </ul>
-            </p>
-        </section>
-
-        <section id="about"> 
-         <p style="color:#33d633; line-height:9px">
-          
+  
+   
+ <p style="color:#33d633; line-height:14px">
 ..........................................................:I......................?7~...............<br>
 ...............................:+&nbsp;7,.................=777777...............,:+&nbsp;77777:...............<br>
 ........................,+7&nbsp;&nbsp;7&nbsp;7&nbsp;77..........,~7777777777777.........,+777&nbsp;777777777,...............<br>
@@ -169,14 +140,62 @@
 ...........77&nbsp;77777&nbsp;&nbsp;77=,..........77777777777I=,...........7:=7&nbsp;77+:...............................<br>
 ..........,777777?~,...............7777&nbsp;7?:................,77+,....................................<br>
 ..........:=.......................=................................................................<br>
+</p> 
+    <main>
+        <section id="home">
+         
+ 
+            <h2>CIA Command Line Interface Terminal</h2>
+            <p>Writing objects: 100% (16/16), 414.92 KiB | done.</p>
+            
+            <p>
+                <span>Type a <abbr style="color:green">'command'</abbr> + <kbd>Enter</kbd></span>
+                <ul>
+                  <li>'shows'</li>
+                  <li>'video'</li>
+                  <li>'home' </li>
+                  <li>'about'</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="about"> 
+         <p style="color:#33d633; line-height:12px">
+..........................................................:I......................?7~...............<br>
+...............................:+&nbsp;7,.................=777777...............,:+&nbsp;77777:...............<br>
+........................,+7&nbsp;&nbsp;7&nbsp;7&nbsp;77..........,~7777777777777.........,+777&nbsp;777777777,...............<br>
+...................,+I&nbsp;77777I777777.....,~7&nbsp;&nbsp;777&nbsp;7&nbsp;777777777....~?77777?,...&nbsp;7777777................<br>
+.............,=?77&nbsp;7?......=77I&nbsp;777..?&nbsp;777777I,...?&nbsp;7777777I.,777777&nbsp;=......77777777................<br>
+.............&nbsp;7777?..........+77777..77777777:....7&nbsp;7777777=.:&nbsp;777&nbsp;77.......+7777777................<br>
+.............&nbsp;777~............I&nbsp;77I..&nbsp;7777777.....777777777:.~&nbsp;77&nbsp;77=.......:7777777................<br>
+............:&nbsp;77=....,777+....,&nbsp;77+..77777777.....&nbsp;77777777,.=777&nbsp;77.........&nbsp;77777?................<br>
+............=&nbsp;77....,&nbsp;777&nbsp;:.,+?777~.,&nbsp;7777777.....777777777..+77777=.........&nbsp;77777=................<br>
+............I77.....7&nbsp;&nbsp;77777777777:.,&nbsp;7777777.....&nbsp;77777777..I7777&nbsp;.....&nbsp;....?&nbsp;7777:................<br>
+............77&nbsp;....,7&nbsp;777777&nbsp;7I&nbsp;77,.~&nbsp;7777777....:&nbsp;77777777..I7777+....,7,...=77777:................<br>
+............&nbsp;7~....777777777&nbsp;77777..?7777777?....+777777777..77777.....77=...,77777,................<br>
+............&nbsp;7.....7&nbsp;7777777&nbsp;77&nbsp;77..77777777~....I77777777?..&nbsp;777~....:77I....&nbsp;7777.................<br>
+............77....,77777777777&nbsp;777..77777777,....777777777=..&nbsp;777.....77&nbsp;I....77777.................<br>
+............&nbsp;7....,&nbsp;77&nbsp;77777777&nbsp;7I..&nbsp;7777777.....777777777:.,&nbsp;77=.....,.......+&nbsp;777.................<br>
+...........,77....:777&nbsp;77=,...7&nbsp;7+..&nbsp;7777777.....&nbsp;77777777..:777..............,7777.................<br>
+...........~77.....&nbsp;777&nbsp;~....:777~..77777777.....&nbsp;77777777..~&nbsp;7+...............&nbsp;77I.................<br>
+...........+&nbsp;7:....~&nbsp;77=.....&nbsp;&nbsp;77:.,77777777....:&nbsp;77777777..=77,.....,~?77+....&nbsp;77?.................<br>
+...........I777......:......77777,.~7777777I....~777777777..?7?....:777777?....777+.................<br>
+...........&nbsp;&nbsp;777..........~&nbsp;77777,.I7777777?....?777777777..77,....77777777...:777~.................<br>
+...........&nbsp;77777:......,&nbsp;7777&nbsp;&nbsp;&nbsp;..77777777=....7777777&nbsp;&nbsp;~..7I....~77777777777+.....................<br>
+...........777&nbsp;777&nbsp;&nbsp;I?777777=,.....77777777:.,~77777=.......&nbsp;~....77&nbsp;&nbsp;777=..........................<br>
+...........77&nbsp;77777&nbsp;&nbsp;77=,..........77777777777I=,...........7:=7&nbsp;77+:...............................<br>
+..........,777777?~,...............7777&nbsp;7?:................,77+,....................................<br> 
+..........:=.......................=................................................................<br>
 <br></p>
             <h2><span>&raquo;About</span></h2> 
-            <p>CIA is reorganizing your brain </p>
+          
+            <p>The CIA is reorganizing your brain </p>
          
            <p>
                 <span>Type a <abbr style="color:green">'command'</abbr> + <kbd>Enter</kbd></span>
                 <ul>
                     <li>'about'</li>
+                    <li>'video'</li>
                     <li>'shows'</li>
                     <li>'home' </li>
                 </ul>
@@ -186,15 +205,18 @@
 
         <section id="shows">
             <h2><span>&raquo;Shows</span></h2>
-            See CIA Live
-            <p>1/29/19 - Space - Los Angeles</p>
-            <p>2/19/19 - The Other Space - Los Angeles</p>
-            <p>2/29/19 - Outer Space - Los Angeles</p>
+            <p>
+              See The CIA Live:
+
+              <br>3/4 Chicago @ The Empty Bottle</br>
+              3/6 NYC @ Trans Pecos</br>
             <p>
                 <span>Type a <abbr style="color:green">'command'</abbr> + <kbd>Enter</kbd></span>
                 <ul>
                     <li>'about'</li>
+                    <li>'videos'
                     <li>'shows'</li>
+          
                     <li>'home' </li>
                 </ul>
             </p>
@@ -215,17 +237,32 @@
 
 
         <section id="help">
-        <h2><span>&raquo;Help?</span></h2>
-        <p><span>Type [command] + <kbd>Enter</kbd></span></p>
-        <ul>
-            <li>'home' -- </li>
-            <li>'about' -- r</li>
-            <li>'help' -- displays this list</li>
-        </ul>
+          <h2><span>&raquo;Help?</span></h2>
+          <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+          <ul>
+              <li>'home' -- </li>
+              <li>'about' -- r</li>
+              <li>'help' -- displays this list</li>
+          </ul>
         </section>
 
-        <span class="command">syndicatefx:/$<input type="text"></span>
-    </main>
+        <section id="video">   
+          <script>console.log('hi');</script>
+            <div class="video" id="vid1"></div> 
+            <div class="video" id="vid2"></div> 
+         <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+          <ul>
+            <li>'about' </li>  
+            <li>'video' </li>
+            <li>'shows' </li>
+            
+          </ul>
+         </section>
+        
+      <span class="command">syndicatefx:/$<input type="text"></span>
+
+
+</main>
 
 
 
