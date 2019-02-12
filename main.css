@@ -54,8 +54,8 @@ h2{
   font-weight: 400;
 }
 p{
-  margin-bottom:2em;
-  line-height:15px
+  margin-bottom: 2em;
+  line-height: 15px
 }
 abbr{
   cursor: help;
@@ -65,19 +65,19 @@ ul{
   padding: 0;
 }
 li{
-  margin:0.1em 0 0;
+  margin: 0.25em 0 0;
 }
 span{
   display: block;
-  color:#efefef;
-  line-height:1;
+  color: #efefef;
+  line-height: 1;
 }
 
 kbd{
   font-family: 'Inconsolata', monospace;
-  border:1px solid #999;
+  border: 1px solid #999;
   text-transform: uppercase;
-  padding:0 .2em;
+  padding: 0 .2em;
 }
 input[type="text"]{
   max-width: 10em;
