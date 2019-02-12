@@ -13,6 +13,7 @@ body {
   margin: 0; 
 }
 .video{
+  display:none;
   position: fixed;
   right: 20%; 
   top: 0;
