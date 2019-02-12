@@ -29,7 +29,6 @@ body {
   top:50%;
 }
 iframe{
-  background:transparent;
   border:0
 }
 ::selection{
