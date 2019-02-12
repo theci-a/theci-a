@@ -15,18 +15,19 @@ body {
 .video{
   display:none;
   position: fixed;
-  right: 20%; 
+  right: 0; 
   top: 0;
-  width: 20%; 
-  height: 99%;
+  width: 35%; 
+  height: 50%;
   z-index: 0;
   background:url('https://media.nbclosangeles.com/images/1200*676/BRIGHT-LIGHT-SD-1107+2015.gif') no-repeat;
   background-position:center;
   background-size:40%
 }
 #vid2{
-  width:20%;
-  right:0
+  right:0;
+  width:35%;
+  top:50%;
 }
 iframe{
   background:transparent;
