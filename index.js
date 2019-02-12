@@ -12,7 +12,7 @@ function onYouTubePlayerAPIReady() {
         width: '853',
         videoId: 'OcbQRF0dG5s',
         playerVars: {
-            'autoplay': 1,
+            'autoplay': 0,
             'showinfo': 0,
             'controls': 0
         }
@@ -22,7 +22,7 @@ function onYouTubePlayerAPIReady() {
         width: '853',
         videoId: 'k9QzFQv9T1Q',
         playerVars: {
-            'autoplay': 1,
+            'autoplay': 0,
             'showinfo': 0,
             'controls': 0
         }
