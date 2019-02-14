@@ -18,7 +18,7 @@ pre:first-of-type{
 pre{
   display: inline-block;
   vertical-align: middle;
-  max-width: 420px;
+  max-width: 315px;
 }
 pre:last-of-type{
   margin-left: -170px
