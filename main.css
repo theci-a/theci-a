@@ -5,30 +5,39 @@ html {
 }
 
 body {  
-  font: 1.1em/1.6 'Inconsolata', monospace;
-  color: green;
+  font: 1.25em/1.6 'Inconsolata', monospace;
+  color: green; 
   font-weight: 400;
-  max-width: 60em;
+  max-width: 110em;
   padding: 1em;
   margin: 0; 
 }
+pre:first-of-type{
+  max-width:100%
+}
+pre{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 420px;
+}
+pre:last-of-type{
+  margin-left: -170px
+}
 .video{
-  position: fixed;
-  right: 0; 
-  top: 0;
-  width: 45%; 
-  height: 50%;
-  z-index: 0;
+  position: relative;
+  display:inline-block;
+  margin-right:29px;
+  width: 730px; 
+  height:410px;
+  z-index: 1;
   background:url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
   background-position:center;
-  background-size:40%
 }
-#vid2{
-  right:0;
-  width:45%;
-  top:50%;
+.red{
+  color: green;
 }
 iframe{
+  background:transparent;
   border:0
 }
 ::selection{
@@ -52,8 +61,8 @@ h2{
   font-weight: 400;
 }
 p{
-  margin-bottom: 2em;
-  line-height: 15px
+  margin-bottom:2em;
+  line-height: 20px
 }
 abbr{
   cursor: help;
@@ -63,19 +72,19 @@ ul{
   padding: 0;
 }
 li{
-  margin: 0.25em 0 0;
+  margin:0.5em 0 0;
 }
 span{
   display: block;
-  color: #efefef;
-  line-height: 1;
+  color:#efefef;
+  line-height:1;
 }
 
 kbd{
   font-family: 'Inconsolata', monospace;
-  border: 1px solid #999;
+  border:1px solid #999;
   text-transform: uppercase;
-  padding: 0 .2em;
+  padding:0 .2em;
 }
 input[type="text"]{
   max-width: 10em;
@@ -104,4 +113,24 @@ section{
 }
 .open{
   display: block;
+} 
+
+
+blocker {
+  height: 525px;
+  animation-name: example;
+  background: black;
+  animation-duration: 2.14s;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  position: absolute; 
+  top: 0; 
+  z-index:1;
+  width:100%;
+  left:750px;
+}
+ 
+@keyframes example {
+	0% {  top: 0 }
+    100% {  top: 520px}
 }
