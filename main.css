@@ -109,7 +109,6 @@ input[type="text"]:focus{
   margin: 2em 0;
 }
 
-
 section{
   display: none;
 }
@@ -117,12 +116,11 @@ section{
   display: block;
 } 
 
-
 blocker {
   height: 525px;
   animation-name: example;
   background: black;
-  animation-duration: 2.14s;
+  animation-duration: 3s;
   overflow: hidden;
   animation-fill-mode: forwards;
   position: absolute; 
@@ -131,7 +129,15 @@ blocker {
   width: 100%;
   left: 0;
 }
- 
+ blocker:nth-last-child {
+   height: 300px;
+   animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {  top: 0;  height:70px }
+    100% {  top: 920px; height:2px }
+}
 @keyframes example {
     0% {  top: 0;  height:70px }
     100% {  top: 920px; height:2px }
