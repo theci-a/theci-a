@@ -149,9 +149,9 @@ blocker {
 
 @keyframes example {
     0% {  top: 0;  height:70px }
-    100% {  top: 920px; height:0px }
+    100% {  top: 590px; height:0px }
 }
 @keyframes example {
     0% {  top: 0;  height:270px }
-    100% {  top: 920px; height:0px }
+    100% {  top: 6000px; height:0px }
 }
