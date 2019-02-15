@@ -131,7 +131,7 @@ blocker {
 }
  blocker:nth-last-child {
    height: 300px;
-   animation-duration: 4s;
+   animation-duration: 5s;
    opacity: 0.7
 }
 
