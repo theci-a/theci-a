@@ -9,7 +9,7 @@ body {
   color: green; 
   font-weight: 400;
   max-width: 110em;
-  padding: 1em;
+  padding: 0 1em;
   margin: 0; 
 }
 pre:first-of-type{
