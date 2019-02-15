@@ -129,7 +129,7 @@ blocker {
   width: 100%;
   left: 0;
 }
- blocker:nth-last-child {
+ blocker:last-of-type {
    height: 300px;
    animation-duration: 5s;
    animation-delay: 1s;
