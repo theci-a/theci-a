@@ -28,6 +28,10 @@ pre{
     vertical-align: text-top;
     zoom: .6;
   }
+  pre:first-of-type{
+    line-height: 3px!important;
+    font-size: 4px!important;
+  }
 }
 pre:last-of-type{
   margin-left: -155px
