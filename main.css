@@ -127,9 +127,9 @@ blocker {
   animation-fill-mode: forwards;
   position: absolute; 
   top: 0; 
-  z-index:1;
-  width:100%;
-  left:750px;
+  z-index: 1;
+  width: 100%;
+  left: 0;
 }
  
 @keyframes example {
