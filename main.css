@@ -15,12 +15,19 @@ body {
 pre:first-of-type{
   max-width:100%;  
   color: #009b00; 
+  zoom:1
 }
 pre{
   display: inline-block;
   vertical-align: middle;
   color: #00ab00;
   max-width: 435px;
+}
+@media (max-width:1200px){
+  pre{
+    vertical-align: text-top;
+    zoom: .6;
+  }
 }
 pre:last-of-type{
   margin-left: -155px
