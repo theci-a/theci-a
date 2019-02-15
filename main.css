@@ -141,8 +141,8 @@ blocker {
   left: 0;
 }
  blocker:last-of-type {
-   height: 300px;
-   animation-duration: 5s;
+   height:90px;
+   animation-duration: 2s;
    animation-delay: 1s;
    opacity: 0.7
 }
@@ -152,6 +152,6 @@ blocker {
     100% {  top: 590px; height:0px }
 }
 @keyframes example {
-    0% {  top: 0;  height:270px }
+    0% {  top: 0;  height:90px }
     100% {  top: 590px; height:0px }
 }
