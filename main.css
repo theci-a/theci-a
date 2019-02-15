@@ -14,7 +14,7 @@ body {
 }
 pre:first-of-type{
   max-width:100%;  
-  color: green; 
+  color: #009b00; 
 }
 pre{
   display: inline-block;
