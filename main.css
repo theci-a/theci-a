@@ -18,10 +18,11 @@ pre:first-of-type{
 pre{
   display: inline-block;
   vertical-align: middle;
-  max-width: 315px;
+  color: #00ab00;
+  max-width: 435px;
 }
 pre:last-of-type{
-  margin-left: -120px
+  margin-left: -80px
 }
 .video{
   position: relative;
