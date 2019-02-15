@@ -13,7 +13,7 @@ body {
   margin: 0; 
 }
 pre:first-of-type{
-  max-width:100%;  
+  max-width: 100%;  
   color: #009b00; 
   zoom:1
 }
@@ -30,7 +30,7 @@ pre{
   }
   pre:first-of-type{
     line-height: 3px!important;
-    font-size: 4px!important;
+    font-size: 5px!important;
   }
 }
 pre:last-of-type{
