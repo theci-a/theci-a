@@ -133,6 +133,6 @@ blocker {
 }
  
 @keyframes example {
-    0% {  top: 0; height:0 }
-    100% {  top: 520px}
+    0% {  top: 0;  }
+    100% {  top: 520px; height:0 }
 }
