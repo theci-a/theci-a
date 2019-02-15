@@ -23,7 +23,7 @@ pre{
   color: #00ab00;
   max-width: 435px;
 }
-@media (max-width:1490px){
+@media (max-width:1590px){
   pre{
     vertical-align: text-top;
     zoom: .6;
