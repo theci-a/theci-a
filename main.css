@@ -60,7 +60,6 @@ pre:last-of-type{
 
 @media (max-width:768px){
   pre{
-    zoom: .6;
     font: 6px/3px
   }
   pre:nth-child(2){
