@@ -31,7 +31,7 @@ pre:last-of-type{
 @media (max-width:1812px){
   pre{
     vertical-align: text-top;
-    zoom: .6;
+    zoom: 1;
   }
   pre:first-of-type{
     font-size: 6px;
