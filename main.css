@@ -15,7 +15,7 @@ body {
 pre:first-of-type{
   max-width: 100%;  
   color: #009b00; 
-  zoom:1
+  font: 8px/4px monospace
 }
 pre{
   display: inline-block;
@@ -34,8 +34,8 @@ pre:last-of-type{
     zoom: 1;
   }
   pre:first-of-type{
-    font-size: 6px;
     line-height: 3px;
+    font: 8px/4px monospace
   }
   pre:last-of-type{
     margin-left: -145px
@@ -50,7 +50,6 @@ pre:last-of-type{
   }
   pre:first-of-type{
     line-height: 4px;
-    font-size: 8px;
     margin-left: -90px
   }
   pre:last-of-type {
