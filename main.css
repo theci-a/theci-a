@@ -21,7 +21,7 @@ pre{
   display: inline-block;
   vertical-align: middle;
   color: #00ab00;
-  max-width: 435px;
+  max-width: 414px;
 }
 
 pre:last-of-type{
@@ -38,7 +38,7 @@ pre:last-of-type{
     font: 8px/4px monospace
   }
   pre:last-of-type{
-    margin-left: -145px
+    margin-left: -160px
   }
 }
 
