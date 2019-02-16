@@ -55,7 +55,7 @@ pre:last-of-type{
   }
   pre:last-of-type {
     margin-left: -248px;
-}
+  }
 }
 
 @media (max-width:768px){
@@ -67,7 +67,7 @@ pre:last-of-type{
     margin-left: -126px;
   }
   pre:last-of-type{
-    margin-left: -308px
+    margin-left: -204px
   }
 }
 
