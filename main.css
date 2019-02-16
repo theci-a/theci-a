@@ -182,14 +182,11 @@ blocker {
    animation-delay: 1s;
    opacity: 0.25;
    background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bypeople.com%2Fwp-content%2Fuploads%2F2015%2F05%2Fstatic-css-animated-background.png&f=1');
-   background-blend-mode: multiply;
+   background-blend-mode: darken;
 }
 
 @keyframes example {
     0% {  top: 0;  height:70px }
-    100% {  top: 590px; height:0px }
+    100% {  top: 750px; height:0px }
 }
-@keyframes example {
-    0% {  top: 0;  height:90px }
-    100% {  top: 590px; height:0px }
-}
+
