@@ -23,28 +23,44 @@ pre{
   color: #00ab00;
   max-width: 435px;
 }
+
+pre:last-of-type{
+  margin-left: -155px
+}
+
+@media (max-width:1290px){
+  pre{
+    vertical-align: text-top;
+    zoom: 0.6;
+  }
+  pre:first-of-type{
+    line-height: 3px;
+    font-size: 6px;
+  }
+}
 @media (max-width:1590px){
   pre{
     vertical-align: text-top;
     zoom: .6;
   }
   pre:first-of-type{
+    font-size: 6px;
     line-height: 3px;
-    font-size: 5px;
+  }
+  pre:last-of-type{
+   margin-left: -145px
   }
 }
-pre:last-of-type{
-  margin-left: -155px
-}
+
 .video{
   position: relative;
-  display:inline-block;
-  margin-right:29px;
+  display: inline-block;
+  margin-right: 29px;
   width: 730px; 
   height:410px;
   z-index: 1;
-  background:url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
-  background-position:center;
+  background: url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
+  background-position: center;
 }
 .red{
   color: green;
