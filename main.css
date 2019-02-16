@@ -53,7 +53,8 @@ pre:last-of-type{
   pre{
     vertical-align: text-top;
     zoom: 0.6;
-    margin-left: -23px
+    margin-left: -23px;
+      font:3px/4px monospace
   }
   pre:first-of-type{
     line-height: 4px;
