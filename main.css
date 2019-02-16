@@ -18,7 +18,7 @@ pre:first-of-type{
   font: 8px/4px monospace
 }
 pre{
-  max-height: 300px;
+  max-height: 340px;
   display: inline-block;
   vertical-align: middle;
   color: #00ab00;
