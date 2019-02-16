@@ -28,17 +28,7 @@ pre:last-of-type{
   margin-left: -155px
 }
 
-@media (max-width:1290px){
-  pre{
-    vertical-align: text-top;
-    zoom: 0.6;
-  }
-  pre:first-of-type{
-    line-height: 3px;
-    font-size: 6px;
-  }
-}
-@media (max-width:1590px){
+@media (max-width:1812px){
   pre{
     vertical-align: text-top;
     zoom: .6;
@@ -51,6 +41,28 @@ pre:last-of-type{
    margin-left: -145px
   }
 }
+
+@media (max-width:1290px){
+  pre{
+    vertical-align: text-top;
+    zoom: 0.6;
+  }
+  pre:first-of-type{
+    line-height: 4px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width:768px){
+  pre:nth-child(2){
+    font: 3px/4px monospace;
+    margin-left: -126px;
+  }
+  pre:last-of-type{
+    margin-left: -308px
+  }
+}
+
 
 .video{
   position: relative;
