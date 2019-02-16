@@ -32,7 +32,7 @@ pre:last-of-type{
 @media (max-width:1812px){
   pre{
     vertical-align: text-top;
-    zoom: 1;
+    zoom: 0.8;
   }
   pre:first-of-type{
     line-height: 3px;
