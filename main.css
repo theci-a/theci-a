@@ -36,7 +36,7 @@ pre:last-of-type{
   }
   pre:first-of-type{
     line-height: 3px;
-    font: 3px/2px monospace
+    font: 5px/4px monospace
   }
   pre:last-of-type{
     margin-left: -160px
