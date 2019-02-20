@@ -3,92 +3,41 @@ html {
   background: #000;
   overflow-y: scroll; 
 }
-
+.show{
+  background:red
+}
 body {  
-  font: 1.1em/1.6 'Inconsolata', monospace;
+  font: 1.12em/1 'Inconsolata', monospace;
   color: green; 
   font-weight: 400;
-  max-width: 110em;
-  padding: 0 1em;
+  min-width: 2050px;
+  padding: 1em;
   margin: 0; 
 }
+
+br{
+  line-height: 2px
+}
 pre:first-of-type{
-  max-width: 100%;  
-  color: #009b00; 
-  margin-top:-5px;
-  font: 8px/4px monospace
+  max-width: 100%;
+  color: green; 
 }
 pre{
-  max-height: 340px;
   display: inline-block;
-  vertical-align: middle;
-  color: #00ab00;
-  max-width: 414px;
+  vertical-align: top;
 }
-
 pre:last-of-type{
-  margin-left: -155px
+  margin-top:9px
 }
-
-@media (max-width:1812px){
-  pre{
-    vertical-align: text-top;
-    zoom: 0.8;
-  }
-  pre:first-of-type{
-    line-height: 3px;
-    font: 5px/4px monospace
-  }
-  pre:last-of-type{
-    margin-left: -160px
-  }
-}
-
-@media (max-width:1500px){
-  pre{
-  font: 7px/3px monospace
-  }
-}
-@media (max-width:1290px){
-  pre{
-    vertical-align: text-top;
-    zoom: 0.6;
-    margin-left: -23px;
-      font:3px/4px monospace
-  }
-  pre:first-of-type{
-    line-height: 4px;
-    margin-top: -9px;
-    margin-left: -8px
-  }
-  pre:last-of-type {
-    margin-left: -248px;
-  }
-}
-
-@media (max-width:768px){
-  pre{
-    font: 6px/3px
-  }
-  pre:nth-child(2){
-    font: 3px/4px monospace;
-    margin-left: -126px;
-  }
-  pre:last-of-type{
-    margin-left: -204px
-  }
-}
-
-
 .video{
   position: relative;
-  display: inline-block;
-  margin-right: 29px;
+  display:inline-block;
+  margin-right:29px;
   width: 730px; 
   height:410px;
   z-index: 1;
-  background: url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
-  background-position: center;
+  background:url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
+  background-position:center;
 }
 .red{
   color: green;
@@ -111,7 +60,7 @@ a{
 }
 a:hover,a:focus{
   background: #000;
-  color:#fff;
+  color: #fff;
 }
 h2{
   font-size: 1em;
@@ -129,7 +78,7 @@ ul{
   padding: 0;
 }
 li{
-  margin:0.15em 0 0;
+  margin:0.5em 0 0;
 }
 span{
   display: block;
@@ -164,6 +113,7 @@ input[type="text"]:focus{
   margin: 2em 0;
 }
 
+
 section{
   display: none;
 }
@@ -171,29 +121,40 @@ section{
   display: block;
 } 
 
-blocker {
-  height: 525px;
+
+div.blocker {
+  height: 505px;
   animation-name: example;
   background: black;
-  animation-duration: 3s;
+  animation-duration: 3.2s;
   overflow: hidden;
   animation-fill-mode: forwards;
   position: absolute; 
   top: 0; 
-  z-index: 1;
-  width: 100%;
-  left: 0;
+  z-index:1;
+  width: 900px;
+  left:0;
 }
- blocker:last-of-type {
-   height: 90px;
-   animation-duration: 2s;
-   animation-delay: 1s;
-   opacity: 0.25;
-   background-blend-mode: darken;
-}
-
+ 
+div.about-blocker {
+  height: 505px;
+  background: black;
+  animation-duration: 8s;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  position: absolute; 
+  top: 0; 
+  z-index:1; 
+  width:1090px;
+  left:900px;
+} 
+ 
 @keyframes example {
-    0% {  top: 0;  height:70px }
-    100% {  top: 750px; height:0px }
+	0% {  
+    top: 0 
+  }
+    100% {  
+      height: 0;
+      top: 520px
+  }
 }
-
