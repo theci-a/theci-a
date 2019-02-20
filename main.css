@@ -27,7 +27,8 @@ pre{
   vertical-align: top;
 }
 pre:last-of-type{
-  margin-top:9px
+  margin-top:9px;
+	color:#1ba41b
 }
 .video{
   position: relative;
