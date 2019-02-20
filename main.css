@@ -33,7 +33,7 @@ pre:last-of-type{
 .video{
   position: relative;
   display:inline-block;
-  margin-right:29px;
+  margin:0 1px 0 2px;
   width: 730px; 
   height:410px;
   z-index: 1;
