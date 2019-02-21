@@ -29,6 +29,16 @@ br{
 	}
 }
 
+
+@media only screen and (min-width: 1200px) {
+	pre:first-of-type{
+		font: 6px/3px  monospace;
+	}
+	pre:last-of-type{
+		font: 12px/6px monospace;
+	}
+}
+
 pre:first-of-type{
 	max-width: 100%;
 	color: green; 
@@ -41,7 +51,6 @@ pre{
 pre:last-of-type{
 	margin-top:9px;
 	color:#1ba41b;
-	font: 12px/6px monospace;
 }
 
 
