@@ -20,6 +20,16 @@ br{
 }
 
 
+
+@media only screen and (min-width: 1200px) {
+	pre:first-of-type{
+		font: 6px/3px  monospace;
+	}
+	pre:last-of-type{
+		font: 12px/6px monospace;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	pre:first-of-type{
 		font: 4px/3px monospace	
@@ -30,14 +40,7 @@ br{
 }
 
 
-@media only screen and (min-width: 1200px) {
-	pre:first-of-type{
-		font: 6px/3px  monospace;
-	}
-	pre:last-of-type{
-		font: 12px/6px monospace;
-	}
-}
+
 
 pre:first-of-type{
 	max-width: 100%;
