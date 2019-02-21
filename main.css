@@ -20,10 +20,9 @@ br{
 }
 
 
-
 @media only screen and (min-width: 1200px) {
 	pre:first-of-type{
-		font: 6px/3px  monospace;
+		font: 8px/6px  monospace;
 	}
 	pre:last-of-type{
 		font: 6px/3px monospace;
