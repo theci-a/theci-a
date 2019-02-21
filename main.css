@@ -18,6 +18,17 @@ body {
 br{
   line-height: 2px
 }
+
+
+@media only screen and (max-width: 1200px) {
+	pre:first-of-type{
+		font: 4px/3px monospace	
+	}
+	pre:last-of-type{
+		font: 3px/1px  monospace;
+	}
+}
+
 pre:first-of-type{
 	max-width: 100%;
 	color: green; 
@@ -34,14 +45,7 @@ pre:last-of-type{
 }
 
 
-@media only screen and (max-width: 1200px) {
-	pre:first-of-type{
-		font: 4px/3px monospace	
-	}
-	pre:last-of-type{
-		font: 3px/1px  monospace;
-	}
-}
+
 .video{
   position: relative;
   display:inline-block;
