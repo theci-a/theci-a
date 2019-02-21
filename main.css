@@ -19,17 +19,21 @@ br{
   line-height: 2px
 }
 pre:first-of-type{
-  max-width: 100%;
-  color: green; 
+	max-width: 100%;
+	color: green; 
+	font: 6px/3px  monospace;
 }
 pre{
-  display: inline-block;
-  vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 pre:last-of-type{
-  margin-top:9px;
-	color:#1ba41b
+	margin-top:9px;
+	color:#1ba41b;
+	font: 12px/6px monospace;
 }
+
+
 @media only screen and (max-width: 1200px) {
 	pre:first-of-type{
 		font: 4px/3px monospace	
