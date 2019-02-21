@@ -30,7 +30,7 @@ pre:last-of-type{
   margin-top:9px;
 	color:#1ba41b
 }
-@media(1280px){
+@media only screen and (max-width: 1200px) {
 	pre:first-of-type{
 		font: 4px/3px monospace	
 	}
