@@ -44,7 +44,6 @@ br{
 pre:first-of-type{
 	max-width: 100%;
 	color: green; 
-	font: 6px/3px  monospace;
 }
 pre{
 	display: inline-block;
