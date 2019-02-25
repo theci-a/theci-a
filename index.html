@@ -66,7 +66,10 @@
           // Display section with id == destination and hide all others 
           $('section[id="' + destination + '"]').addClass('open').siblings().removeClass('open');
           
-          if(destination == "about") $('.about-blocker').addClass('show-it');
+          if(destination == "about") {
+           $('.about-blocker').addClass('show-it');
+           $('pre:last-of-type').addClass('displayed');
+          }
            
           
           // If destination does not match our array of section ids, display error section
