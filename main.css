@@ -179,7 +179,9 @@ div.about-blocker {
   width:1090px;
   left:605px;
 } 
- 
+.about-blocker.show-it{
+  animation-name: example	
+}
 @keyframes example {
   0% {  
       top: 0 
