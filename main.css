@@ -125,7 +125,7 @@ kbd{
   padding:0 .2em;
 }
 input[type="text"]{
-  max-width: 10em;
+  max-width: 100%;
   border: none;
   font-family: inherit;
   background: #000;
@@ -139,7 +139,6 @@ input[type="text"]:focus{
 }
 .command{
   display: block;
-  max-width: 20em;
   color: #efefef;
   font-weight: 700;
   margin: 2em 0;
