@@ -56,7 +56,7 @@ pre:last-of-type{
 	display:none
 }
 
-.show-it{
+.show-it, pre:last-of-type{
 	display:inline-block;
 }
 
