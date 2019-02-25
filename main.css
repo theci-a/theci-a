@@ -10,7 +10,6 @@ body {
   font: 1.12em/1 'Inconsolata', monospace;
   color: green; 
   font-weight: 400;
-  min-width: 1975px;
   padding: 1em;
   margin: 0; 
 }
@@ -36,6 +35,9 @@ br{
 	}
 	pre:last-of-type{
 		font: 6px/3px monospace;
+	}
+	body{
+		 min-width: 1975px;
 	}
 }
 
