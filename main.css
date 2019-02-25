@@ -42,6 +42,7 @@ br{
 @media only screen and (max-width: 768px) {
 	pre:last-of-type {
     		font: 2px/0.5px monospace;
+		display: block
 	}
 }
 
