@@ -19,6 +19,37 @@ br{
 }
 
 
+div.blocker {
+  height: 505px;
+  animation-name: example;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  background: black;
+  animation-duration: 3.5s;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  position: absolute; 
+  top: 0; 
+  z-index:1;
+  width: 900px;
+  transform: rotate(-1deg);
+  left:0;
+}
+ 
+div.about-blocker {
+  height: 505px;
+  background: black;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  position: absolute; 
+  top: 0; 
+  z-index:1; 
+  width: 1090px;
+  transform: rotate(-1deg);
+  left: 605px;
+} 
+
 @media only screen and (max-width: 1200px) {
 	pre:first-of-type{
 		font: 4px/3px monospace	
@@ -45,6 +76,10 @@ br{
 	pre:last-of-type {
     		font: 2px/0.5px monospace;
 		display: block!important
+	}
+	div.about-blocker {
+	    height: 165px;
+	    top: 255px;
 	}
 }
 
@@ -159,37 +194,6 @@ section{
   display: block;
 } 
 
-
-div.blocker {
-  height: 505px;
-  animation-name: example;
-  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-  background: black;
-  animation-duration: 3.5s;
-  overflow: hidden;
-  animation-fill-mode: forwards;
-  position: absolute; 
-  top: 0; 
-  z-index:1;
-  width: 900px;
-  transform: rotate(-1deg);
-  left:0;
-}
- 
-div.about-blocker {
-  height: 505px;
-  background: black;
-  animation-duration: 4s;
-  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-  overflow: hidden;
-  animation-fill-mode: forwards;
-  position: absolute; 
-  top: 0; 
-  z-index:1; 
-  width: 1090px;
-  transform: rotate(-1deg);
-  left: 605px;
-} 
 .about-blocker.show-it{
   animation-name: example	
 }
