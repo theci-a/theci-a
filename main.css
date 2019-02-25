@@ -161,7 +161,7 @@ section{
 div.blocker {
   height: 505px;
   animation-name: example;
-  animation-timing-function: easeInQuart;
+  animation-timing-function: easeOutQuart;
   background: black;
   animation-duration: 3.5s;
   overflow: hidden;
@@ -178,15 +178,15 @@ div.about-blocker {
   height: 505px;
   background: black;
   animation-duration: 4s;
-  animation-timing-function: easeInQuart;
+  animation-timing-function: easeOutQuart;
   overflow: hidden;
   animation-fill-mode: forwards;
   position: absolute; 
   top: 0; 
   z-index:1; 
-  width:1090px;
+  width: 1090px;
   transform: rotate(-1deg);
-  left:605px;
+  left: 605px;
 } 
 .about-blocker.show-it{
   animation-name: example	
