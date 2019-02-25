@@ -26,6 +26,7 @@ br{
 	}
 	pre:last-of-type{
 		font: 3px/1px  monospace;
+		display:block
 	}
 }
 
@@ -52,8 +53,12 @@ pre{
 pre:last-of-type{
 	margin-top:4px;
 	color:#1ba41b;
+	display:none
 }
 
+.show-it{
+	display:inline-block;
+}
 
 
 .video{
