@@ -163,7 +163,7 @@ section{
 div.blocker {
   height: 505px;
   animation-name: example;
-  animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
   background: black;
   animation-duration: 3.5s;
   overflow: hidden;
@@ -180,7 +180,7 @@ div.about-blocker {
   height: 505px;
   background: black;
   animation-duration: 4s;
-  animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
   overflow: hidden;
   animation-fill-mode: forwards;
   position: absolute; 
