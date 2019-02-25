@@ -80,6 +80,8 @@ div.about-blocker {
 	div.about-blocker {
 	    height: 165px;
 	    top: 255px;
+	    left:0;
+	    width:100%
 	}
 }
 
