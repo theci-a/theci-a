@@ -157,7 +157,7 @@ section{
 div.blocker {
   height: 505px;
   animation-name: example;
-  animation-timing-function: linear;
+  animation-timing-function: easeInQuart;
   background: black;
   animation-duration: 3.5s;
   overflow: hidden;
@@ -174,7 +174,7 @@ div.about-blocker {
   height: 505px;
   background: black;
   animation-duration: 4s;
-  animation-timing-function: linear;
+  animation-timing-function: easeInQuart;
   overflow: hidden;
   animation-fill-mode: forwards;
   position: absolute; 
