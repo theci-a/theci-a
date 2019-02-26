@@ -78,10 +78,10 @@ div.about-blocker {
 		display: block!important
 	}
 	div.about-blocker {
-	    height: 165px;
+	    height: 144px;
 	    top: 255px;
-	    left:0;
-	    width:100%
+	    left: 0;
+	    width: 100%
 	}
 }
 
