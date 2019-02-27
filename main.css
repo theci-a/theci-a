@@ -31,7 +31,6 @@ div.blocker {
   top: 0; 
   z-index:1;
   width: 900px;
-  transform: rotate(-1deg);
   left:0;
 }
  
@@ -46,7 +45,6 @@ div.about-blocker {
   top: 0; 
   z-index:1; 
   width: 1090px;
-  transform: rotate(-1deg);
   left: 605px;
 } 
 
