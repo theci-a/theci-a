@@ -74,11 +74,12 @@ div.about-blocker {
 
 @media only screen and (max-width: 768px) {
 	pre:last-of-type {
-    		font: 2px/0.5px monospace;
-		display: block!important
+    	    font: 4px/2px  monospace;
+	    display: block!important;
+	    zoom: 0.5;
 	}
 	div.about-blocker {
-	    height: 144px;
+	    height: 125px;
 	    top: 255px;
 	    left: 0;
 	    width: 100%
