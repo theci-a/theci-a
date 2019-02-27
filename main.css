@@ -107,13 +107,14 @@ pre:last-of-type{
 
 .video{
   position: relative;
-  display:inline-block;
+  display: inline-block;
   margin:0 1px 0 2px;
   width: 730px; 
-  height:410px;
+  max-width: 100%;
+  height: 410px;
   z-index: 1;
-  background:url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
-  background-position:center;
+  background: url('https://i.stack.imgur.com/t7gba.gif') no-repeat;
+  background-position: center
 }
 .red{
   color: green;
